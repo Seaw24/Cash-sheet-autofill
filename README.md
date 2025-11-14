@@ -126,17 +126,17 @@ Follow these steps every day to run the autofiller:
    - Open the Excel files to check that the data was filled in correctly.
 
 ## 📁 File Structure
-
 /
-|-- run_autofiller.bat    # Click this to run the program
-|-- main.py               # Main script, contains all logic
-|-- config.py             # **IMPORTANT: All paths and maps are here**
-|-- infor_parser.py       # Logic for Infor (.csv) files
-|-- tavlo_parser.py       # Logic for Tavlo (.xls/xml) files
-|-- excel_autofiller.py   # Logic for writing to Excel
-|-- requirements.txt      # Python libraries
-|-- .gitignore            # Files for Git to ignore
-|-- README.md             # This file
-|
-|-- reports/              # (Empty) Download daily reports here
-|-- casheet/              # (Empty) Put your weekly casheet files here
+├── run_autofiller.bat    # Click this to run the program
+├── main.py               # Main script, contains all logic
+├── config.py             # **IMPORTANT: All paths and maps are here**
+├── infor_parser.py       # Logic for Infor (.csv) files
+├── tavlo_parser.py       # Logic for Tavlo (.xls/xml) files
+├── excel_autofiller.py   # Logic for writing to Excel
+├── requirements.txt      # Python libraries
+├── .gitignore            # Files for Git to ignore
+├── LICENSE               # Your MIT License
+├── README.md             # This file
+│
+├── reports/              # (Empty) Download daily reports here
+└── casheet/              # (Empty) Put your weekly casheet files here
