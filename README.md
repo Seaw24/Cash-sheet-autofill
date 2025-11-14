@@ -1,5 +1,6 @@
 # Cash Sheet Auto-Filler
 
+![Project Demo](demo/demo.gif)
 This is a Python script designed to automate the daily process of filling out cash sheet workbooks. It reads daily sales reports from two different POS systems (Infor and Tavlo), parses the data, and automatically fills in the corresponding weekly cash sheet Excel file.
 
 ## Features
