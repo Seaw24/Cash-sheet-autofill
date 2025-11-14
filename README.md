@@ -140,5 +140,3 @@ Follow these steps every day to run the autofiller:
 │
 ├── reports/ # (Empty) Download daily reports here
 └── casheet/ # (Empty) Put your weekly casheet files here
-
-
