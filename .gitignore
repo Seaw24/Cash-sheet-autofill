@@ -1,0 +1,15 @@
+#Python virtual enviroment 
+venv/
+
+# Python cache file 
+__pycache__/
+*.pyc
+
+#Testing local file 
+hehe.py
+
+#Datafolder 
+casheet/
+reports 22/
+
+
