@@ -52,16 +52,18 @@ The program works in a three-step process:
 
 ## 🔧 Configuration (One-Time Setup)
 
-Before you can run the program, you **must** edit the `config.py` file to match your computer's paths and cash sheet setup.
+## 🔧 Configuration (One-Time Setup)
+
+Before you can run the program, you **must** edit the `src/config.py` file to match your computer's paths and casheet setup.
 
 1. **`REPORTS_FOLDER` & `CASHEET_FOLDER`**:
 
-   - Set these variables to the **full folder paths** for your `reports` and `casheet` folders.
-   - **Important**: The path must start with an `r` to be a "raw string."
+   - `REPORTS_FOLDER` is now set automatically; it finds the reports folder in your main project directory (one level above `src`). You should not need to change this.
+   - `CASHEET_FOLDER` must be updated manually (e.g., every week). Paste the **full absolute path** to your current week's casheet folder.
+   - **Important:** The path must start with an `r` to be a "raw string."
    - Example:
-     ```python
-     REPORTS_FOLDER = r"C:\Users\YourName\Desktop\reports"
-     CASHEET_FOLDER = r"C:\Users\YourName\Desktop\casheet"
+     ```
+     CASHEET_FOLDER = r"C:\Users\MyName\My Documents\casheets_11-17-25"
      ```
 
 2. **`REPORTS_CASHSHEET_MAP`**:
@@ -126,6 +128,7 @@ Follow these steps every day to run the autofiller:
    - Open the Excel files to check that the data was filled in correctly.
 
 ## 📁 File Structure
+
 ```
 /
 ├── run_autofiller.bat # Click this to run the program
