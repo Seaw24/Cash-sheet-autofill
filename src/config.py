@@ -1,21 +1,23 @@
+import sys
 from pathlib import Path
 
-# Configuration
-THIS_FILE = Path(__file__)
+# This code block makes your paths work in both
+# normal mode (python src/main.py) and as an .exe
 
-# 2. Get the path to the "src" folder
-SRC_DIR = THIS_FILE.parent
-
-# 3. Get the path to the PROJECT ROOT (the folder *above* src)
-BASE_DIR = SRC_DIR.parent
+if getattr(sys, 'frozen', False):
+    # If it is running as a bundled .exe:
+    # BASE_DIR is the folder containing main.exe
+    # (e.g., C:\...\Auto-fill casheet)
+    BASE_DIR = Path(sys.executable).parent
+else:
+    # If it is running as a normal .py script:
+    # BASE_DIR is the folder *above* the src folder
+    # (e.g., C:\...\Auto-fill casheet)
+    BASE_DIR = Path(__file__).parent.parent
 
 # 4. Define your folders relative to the project root
 REPORTS_FOLDER = BASE_DIR / "reports"
-
-
-#5 Please replace your cash sheet folder here follows the instruction 
 CASH_SHEET_FOLDER = BASE_DIR / "casheet"
-
 
 
 REPORTS_CASHSHEET_MAP = {
@@ -31,7 +33,7 @@ REPORTS_CASHSHEET_MAP = {
     "Union Shake Smart 1-1": ('UnionShakeSmart', "U.S.S."),
     "Café Epicenter Market Kiosks": ("Epicenter", "Epicenter Market"),
     "Café Epicenter ordering Kiosk": ("Epicenter", "Epicenter Order"),
-    "City Edge Cafe": ('HUB', "City's Edge"),
+    "City Edge Cafe": ('HUB', "City's Edge 3"),
     "Crimson View": ("cv casheet", "Register 1"),
     "Einstein Bros. Bagels": ("Satellite", "Einsteins 1"),
     "Hive Express": ("HECS", "Hive Tavlo"),
